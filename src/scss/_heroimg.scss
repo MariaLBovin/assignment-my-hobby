@@ -1,8 +1,10 @@
+@use './variables' as var;
+
 .section__hero-img{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:5rem;
+
 }
 .section__hero-img--images{
     position: relative;
@@ -22,9 +24,18 @@
 .button-next{
     position: absolute;
     top:50%;
-    right: 1rem;
+    right: 2rem;
     transform: translate(50%, -50%)
 }
 img{
-    height:35vh
+    height:35vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: var.$tablet-bp) {
+    img{
+        justify-content: center ;
+    }
 }
