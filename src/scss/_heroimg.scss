@@ -1,0 +1,27 @@
+.section__hero-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:5rem;
+}
+.section__hero-img--images{
+    position: relative;
+    min-width: 100vw;
+}
+.section__hero-img--button{
+    display: inline-block;
+    background: white;
+    border: none;
+}
+.button-prev{
+    position: absolute;
+    top:50%;
+    left:1rem;
+    transform: translate(-50%, -50%);
+}
+.button-next{
+    position: absolute;
+    top:50%;
+    right: 1rem;
+    transform: translate(50%, -50%)
+}
