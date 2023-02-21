@@ -1,0 +1,61 @@
+@use './variables' as var;
+
+.header__menu-container{
+    display: flex;
+    flex-direction: row;
+}
+.header__logo{
+    margin-left: 1rem;
+}
+.header__hamburger{
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
+    font-size: 1rem;
+}
+.header__hamburger span{
+    width: 2rem;
+	height: 2rem;
+}
+.header__menu-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+    display: none;
+    padding-left: 0;
+    
+}
+.header__menu-li{
+    list-style: none;
+
+    a{
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        padding-right: .7rem;
+        transition: 0.4s ease-in;
+        width: fit-content;
+    }
+     a:hover, a:active {
+        color: blue;
+	    background-color: black;
+    }
+} 
+
+@media screen and (min-width: var.$tablet-bp) {
+    .header__hamburger{
+        display: none;
+    }
+    .header__menu{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .header__menu-ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
