@@ -1,4 +1,4 @@
-import { imgArray } from "./imgArray";
+import { imgArray } from "./arrays/imgArray";
 
 const nextBtn : HTMLElement = document.querySelector('.button-next') as HTMLElement;
 const prevBtn : HTMLElement = document.querySelector('.button-prev') as HTMLElement;
