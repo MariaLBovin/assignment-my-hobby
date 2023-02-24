@@ -7,7 +7,43 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <nav class="header__menu-container" aria-label="Main">
+        <div class="header__logo">
+          <img>
+        </div>
+      <button class="header__hamburger" aria-expanded="false" aria-label="Menu">
+        <span class="material-icons" aria-hidden="true">menu</span>
+      </button>
+      <div class="header__menu">
+        <ul class="header__menu-ul" id="header__menu">
+          <li class="header__menu-li"><a href='#'>Vad är agility?</a></li>
+          <li class="header__menu-li"><a href='#'>Träna agility</a></li>
+          <li class="header__menu-li"><a href='#'>Tävla i agility</a></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+    <section class="section__hero-img">
+      <div class="section__hero-img--images">
+        <button class="section__hero-img--button button-prev material-icons">chevron_left</button>
+        <img src="" id="img">
+        <button class="section__hero-img--button button-next material-icons">chevron_right</button>
+      </div>
+    </section>
+    <section class="section__about">
+      <h1>Om agility</h1>
+      <article>
+        I den populära hundsporten agility ska hund och förare klara en hinderbana på tid. Dels är det hinder som hunden hoppar över, dels andra typer av hinder som gungbräda, tunnel och slalom. Här går det undan! Man ska klara banan på kortast möjliga tid utan misstag eller vägringar. Det blir högt tempo och snabba svängar. Det gäller att ha ett bra samarbete med sin hund så att man hänger med.
+
+Nu låter det ju som att agility är en sport bara för den vältränade men så är inte fallet! Alla hundar och alla förare kan träna agility, man får helt enkelt anpassa sig efter sina förutsättningar.
+Agility bygger upp ett gott samarbete mellan hund och förare. Det är en träning som blandar explosivitet, hastighet och precision. Efterhand arbetar hunden mer självständigt på vissa hinder och det stärker hundens självförtroende.
+      </article>
+    </section>
+    <section class="section__do">
+    </section>
+    <section classs="section__compete"></section>
+    <footer></footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
